@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/item_dictionary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:icon="@drawable/icon_dictionary"-->
+<!--        android:title="@string/app_dictionary_name"-->
+<!--        app:tooltipText="@string/app_dictionary_name"-->
+<!--        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/item_recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/recipe_icon"
+        android:title="@string/app_recipes_name"
+        app:tooltipText="@string/app_recipes_name"
+        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/item_songs"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:icon="@drawable/icon_songs"-->
+<!--        android:title="@string/app_songs_name"-->
+<!--        app:tooltipText="@string/app_songs_name"-->
+<!--        app:showAsAction="always" />-->
+<!--    <item-->
+<!--        android:id="@+id/item_sunrise"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:icon="@drawable/icon_sunrise"-->
+<!--        android:title="@string/app_sunrise_name"-->
+<!--        app:tooltipText="@string/app_sunrise_name"-->
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/item_about"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:icon="@drawable/about_icon"
+        android:title="@string/about"
+        app:showAsAction="never" />
+</menu>

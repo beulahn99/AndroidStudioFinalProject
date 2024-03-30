@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="recipe_hint">Enter recipe name</string>
+    <string name="search_text">Search</string>
+    <string name="toolbar_title">Toolbar title</string>
+    <string name="toolbar_subtitle">Toolbar subtitle</string>
+    <string name="app_recipes_name">Recipe Search App</string>
+    <string name="about">About</string>
+    <string name="about_text">Version 1.0, created by Group</string>
+    <string name="home">Home</string>
+    <string name="fav_recipe">Favorites</string>
+    <string name="recipe_menu_info">Version 1.0, created by Beulah Nwokotubo</string>
+    <string name="recipe_prefs">My Preferences</string>
+    <string name="recent_search">Recent Searches</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="recipe_title">Recipe Search App</string>
+    <string name="search_hint">Search</string>
+    <string name="fav_recipes">Favorite Recipes</string>
+    <string name="search_terms">searchTerms</string>
+    <string name="recipe_instructions_message">
+        <![CDATA[
+        <ol>
+            <li><strong>Home</strong>: Go to your main menu by tapping on the home icon in the toolbar.</li>
+            <li><strong>Favorite Songs</strong>: Access your favorite recipes by tapping on the favorites icon in the toolbar.</li>
+            <li><strong>Search</strong>: Use the search feature to find specific recipes. The search results will display matching recipes.</li>
+            <li><strong>Favorite Button</strong>: Click on the heart icon to favorite a recipe. Click on "X" to remove a recipe from your favorites.</li>
+            <li><strong>Recipe Details</strong>: Tap on a recipe in the list to view detailed informationon a recipe.</li>
+        </ol>
+        <br/><br/>
+        <p>Version 1.0, created by Pawinee</p>
+        ]]>
+    </string>
+
+
 </resources>

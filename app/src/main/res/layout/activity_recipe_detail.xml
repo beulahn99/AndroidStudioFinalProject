@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RecipeDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9054A9"
+        android:elevation="4dp"
+        android:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myToolbar"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="10dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fav_recipe"
+            android:contentDescription="Add to Favorites"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/sourceUrlButton"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Link"
+            android:padding="10dp"
+            android:src="@drawable/ic_link" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/recipeSourceUrlTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="View Source URL"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    <!-- Views to display recipe details -->
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/recipeSummaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeImageView"
+        android:layout_marginTop="16dp"
+        android:text="Summary"
+        android:textSize="16sp"
+        android:textColor="#9054A9" />
+
+    <TextView
+        android:id="@+id/recipeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
