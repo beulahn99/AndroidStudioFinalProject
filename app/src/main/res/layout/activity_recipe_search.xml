@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: activity_recipe_search.xml
+    Purpose: Layout file for the RecipeSearchActivity, allowing users to search for recipes.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +15,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.RecipeSearchActivity">
 
-
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/myToolbar"
         android:layout_width="match_parent"
@@ -23,6 +32,7 @@
         app:title="@string/recipe_title"
         app:titleTextColor="#FFFFFF" />
 
+    <!-- EditText for entering recipe search query -->
     <EditText
         android:id="@+id/recipeEditText"
         android:layout_width="0dp"
@@ -36,6 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/myToolbar" />
 
+    <!-- Button to initiate recipe search -->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
@@ -48,6 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/recipeEditText" />
 
+    <!-- RecyclerView to display search results -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recipeRecyclerView"
         android:layout_width="0dp"
@@ -60,6 +72,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchButton"
         app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     <string name="toolbar_subtitle">Toolbar subtitle</string>
     <string name="app_recipes_name">Recipe Search App</string>
     <string name="about">About</string>
-    <string name="about_text">Version 1.0, created by Group</string>
+    <string name="about_text">Version 1.0, created by Beulah Nwokotubo</string>
     <string name="home">Home</string>
     <string name="fav_recipe">Favorites</string>
     <string name="recipe_menu_info">Version 1.0, created by Beulah Nwokotubo</string>
@@ -15,20 +15,46 @@
     <string name="alert_dialog_ok">OK</string>
     <string name="recipe_title">Recipe Search App</string>
     <string name="search_hint">Search</string>
-    <string name="fav_recipes">Favorite Recipes</string>
+    <string name="fav_recipes">Saved Recipes</string>
     <string name="search_terms">searchTerms</string>
+    <string name="welcome_message">Welcome to The Multi-Utility App!</string>
+    <string name="icon_description">Main app icon</string>
+    <string name="fav_button_description">Save recipe button</string>
+    <string name="link_description">Link button</string>
+    <string name="link_text">View Source URL</string>
+    <string name="summary_text">Summary</string>
+    <string name="external_link">External link</string>
+    <string name="unsave_recipe">Unsave recipe</string>
+    <string name="my_recipe_image">My recipe image</string>
+    <string name="title">Title</string>
+    <string name="recipe_image_description">Recipe image</string>
+    <string name="delete_icon">Delete icon</string>
+    <string name="recipe_removed_from_favorites">Recipe removed from favorites</string>
+    <string name="confirm_remove_recipe">Are you sure you want to remove this recipe from favorites?</string>
+    <string name="remove_action">REMOVE</string>
+    <string name="saved_recipe_title">Saved Recipe</string>
+    <string name="my_data_prefs">MyData</string>
+    <string name="saved_favorite">Saved Recipe</string>
+    <string name="removed_favorite">Saved Recipe</string>
+    <string name="searched_recipe_key">searchedRecipe</string>
+    <string name="error_no_recipes">No recipes found</string>
+    <string name="error_no_details">No recipe details found</string>
+    <string name="error_parsing_response">Error parsing response</string>
+    <string name="error_failed">Failed: %s</string>
+    <string name="error_failed_details">Failed to fetch recipe details: %s</string>
+    <string name="unavailable_url">Source URL not available</string>
+    <string name="app_instructions">How to Use the Recipe Search App</string>
     <string name="recipe_instructions_message">
-        <![CDATA[
-        <ol>
-            <li><strong>Home</strong>: Go to your main menu by tapping on the home icon in the toolbar.</li>
-            <li><strong>Favorite Songs</strong>: Access your favorite recipes by tapping on the favorites icon in the toolbar.</li>
-            <li><strong>Search</strong>: Use the search feature to find specific recipes. The search results will display matching recipes.</li>
-            <li><strong>Favorite Button</strong>: Click on the heart icon to favorite a recipe. Click on "X" to remove a recipe from your favorites.</li>
-            <li><strong>Recipe Details</strong>: Tap on a recipe in the list to view detailed informationon a recipe.</li>
-        </ol>
-        <br/><br/>
-        <p>Version 1.0, created by Pawinee</p>
-        ]]>
+    <![CDATA[
+    <p><strong>Home:</strong> Tap the home icon to return to the main menu.</p>
+    <p><strong>Favorite Recipes:</strong> Access your saved recipes by tapping the favorites icon.</p>
+    <p><strong>Search:</strong> Look up recipes by typing in the search bar.</p>
+    <p><strong>Save Recipe:</strong> Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.</p>
+    <p><strong>Recipe Link:</strong> Click on the link icon to view the full recipe online.</p>
+    <p><strong>Recipe Details:</strong> Tap a recipe to view its details, including ingredients and instructions.</p>
+    <br/><br/>
+    <p>Version 1.0, created by Beulah Nwokotubo</p>
+    ]]>
     </string>
 
 

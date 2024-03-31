@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: item_recipe.xml
+    Purpose: Layout file for each item in the RecyclerView of recipes.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView to display recipe summary -->
     <TextView
         android:id="@+id/summaryTextView"
         android:layout_width="match_parent"

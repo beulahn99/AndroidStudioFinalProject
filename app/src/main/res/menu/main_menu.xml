@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: menu_main.xml
+    Purpose: Menu resource file for the main activity toolbar menu.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    <item-->
-<!--        android:id="@+id/item_dictionary"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:icon="@drawable/icon_dictionary"-->
-<!--        android:title="@string/app_dictionary_name"-->
-<!--        app:tooltipText="@string/app_dictionary_name"-->
-<!--        app:showAsAction="always" />-->
-
+    <!-- Menu item for navigating to the Recipe Search app -->
     <item
         android:id="@+id/item_recipes"
         android:layout_width="wrap_content"
@@ -19,7 +20,18 @@
         android:title="@string/app_recipes_name"
         app:tooltipText="@string/app_recipes_name"
         app:showAsAction="always" />
-<!--    <item-->
+
+
+    <!-- Menu item for navigating to the Dictionary app -->
+<!--        android:id="@+id/item_dictionary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:icon="@drawable/icon_dictionary"-->
+<!--        android:title="@string/app_dictionary_name"-->
+<!--        app:tooltipText="@string/app_dictionary_name"-->
+<!--        app:showAsAction="always" />-->
+
+        <!-- Menu item for navigating to the Deezer Song Search app -->
 <!--        android:id="@+id/item_songs"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -27,7 +39,8 @@
 <!--        android:title="@string/app_songs_name"-->
 <!--        app:tooltipText="@string/app_songs_name"-->
 <!--        app:showAsAction="always" />-->
-<!--    <item-->
+
+        <!-- Menu item for navigating to the Sunsrise and Sunset Lookup app -->
 <!--        android:id="@+id/item_sunrise"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -35,6 +48,8 @@
 <!--        android:title="@string/app_sunrise_name"-->
 <!--        app:tooltipText="@string/app_sunrise_name"-->
 <!--        app:showAsAction="always" />-->
+
+    <!-- Menu item for the about section of the main app -->
     <item
         android:id="@+id/item_about"
         android:layout_width="50dp"

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: activity_recipe_detail.xml
+    Purpose: Layout file for displaying recipe details in the RecipeDetailActivity.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.RecipeDetailActivity">
+    android:layout_height="match_parent">
 
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/myToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#9054A9"
+        android:background="#6854a4"
         android:elevation="4dp"
         android:titleTextColor="#FFFFFF" />
 
+    <!-- Button Layout -->
     <LinearLayout
         android:id="@+id/buttonLayout"
         android:layout_width="match_parent"
@@ -26,64 +35,68 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
 
+        <!-- Favorite Button -->
         <ImageButton
             android:id="@+id/favoriteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_fav_recipe"
-            android:contentDescription="Add to Favorites"
+            android:contentDescription="@string/fav_button_description"
             android:background="?android:selectableItemBackground"
             android:padding="10dp" />
 
+        <!-- Source URL Button -->
         <ImageButton
             android:id="@+id/sourceUrlButton"
-            android:layout_width="39dp"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="?android:selectableItemBackground"
-            android:contentDescription="Link"
+            android:contentDescription="@string/link_description"
             android:padding="10dp"
             android:src="@drawable/ic_link" />
     </LinearLayout>
 
-        <TextView
-            android:id="@+id/recipeSourceUrlTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:padding="16dp"
-            android:text="View Source URL"
-            android:textSize="16sp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    <!-- Views to display recipe details -->
+    <!-- Recipe Source URL TextView -->
+    <TextView
+        android:id="@+id/recipeSourceUrlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="@string/link_text"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Recipe Image View -->
     <ImageView
-        android:id="@+id/recipeImageView"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonLayout"
         android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/recipe_image_description"/>
 
+    <!-- Recipe Summary TextView -->
     <TextView
-        android:id="@+id/recipeSummaryTextView"
+        android:id="@+id/summaryTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recipeImageView"
+        android:layout_below="@id/imageView"
         android:layout_marginTop="16dp"
-        android:text="Summary"
+        android:text="@string/summary_text"
         android:textSize="16sp"
         android:textColor="#9054A9" />
 
+    <!-- Recipe Title TextView -->
     <TextView
-        android:id="@+id/recipeTitleTextView"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"

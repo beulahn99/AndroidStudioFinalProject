@@ -21,14 +21,29 @@ import algonquin.cst2335.finalproject.databinding.ActivityRecipeListBinding;
 import algonquin.cst2335.finalproject.model.Recipe;
 import algonquin.cst2335.finalproject.model.RecipeDetail;
 
+/**
+ * Purpose: This activity displays a list of recipes based on the search term.
+ *
+ * Author: Beulah Nwokotubo
+ * Section: 013
+ * Creation Date: 28th March, 2024
+ */
 public class RecipeListActivity extends AppCompatActivity implements RecipeAdapter.OnItemClickListener {
 
+    /**
+     * Adapter for the RecyclerView that displays the list of recipes.
+     */
     private RecipeAdapter adapter;
-    private ActivityRecipeListBinding binding;
+
+    /**
+     * Called when the activity is starting.
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously being shut down, this Bundle contains the data it most recently supplied.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityRecipeListBinding.inflate(getLayoutInflater());
+        algonquin.cst2335.finalproject.databinding.ActivityRecipeListBinding binding = ActivityRecipeListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -47,14 +62,21 @@ public class RecipeListActivity extends AppCompatActivity implements RecipeAdapt
 
             adapter.setOnItemClickListener(this);
         } else {
-            Toast.makeText(this, "No recipes found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.error_no_recipes, Toast.LENGTH_SHORT).show();
         }
     }
+
+    /**
+     * Method invoked when a recipe item is clicked in the RecyclerView.
+     *
+     * @param view     The view that was clicked.
+     * @param position The position of the clicked item in the RecyclerView.
+     */
     @Override
     public void onItemClick(View view, int position) {
         Recipe recipe = adapter.getRecipes().get(position);
         // Make API call to get detailed information about the recipe
-        String apiUrl = "https://api.spoonacular.com/recipes/" + recipe.getId() + "/information?apiKey=e4c024ec9c464355907b51ff82634f78&includeNutrition=true";
+        String apiUrl = String.valueOf("https://api.spoonacular.com/recipes/" + recipe.getId() + "/information?apiKey=e4c024ec9c464355907b51ff82634f78&includeNutrition=true");
 
         VolleyRequestHandler requestHandler = new VolleyRequestHandler(this);
         requestHandler.getData(apiUrl, new VolleyRequestHandler.VolleyResponseListener() {
@@ -77,18 +99,23 @@ public class RecipeListActivity extends AppCompatActivity implements RecipeAdapt
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Toast.makeText(RecipeListActivity.this, "Error parsing recipe details", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RecipeListActivity.this, R.string.error_parsing_response, Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onError(String errorMessage) {
-                Toast.makeText(RecipeListActivity.this, "Failed to fetch recipe details: " + errorMessage, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RecipeListActivity.this, R.string.error_failed_details + errorMessage, Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-
+    /**
+     * Called when a menu item is selected.
+     *
+     * @param item The selected menu item.
+     * @return True if the menu item selection is handled, false otherwise.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
