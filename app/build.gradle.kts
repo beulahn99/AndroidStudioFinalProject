@@ -29,6 +29,12 @@ android {
 }
 
 dependencies {
+    // Other dependencies
+
+    // Add this line for Volley
+    implementation ("com.android.volley:volley:1.2.1")
+}
+dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
