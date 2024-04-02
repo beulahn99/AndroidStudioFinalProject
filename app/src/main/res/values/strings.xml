@@ -32,10 +32,10 @@
     <string name="recipe_removed_from_favorites">Recipe removed from favorites</string>
     <string name="confirm_remove_recipe">Are you sure you want to remove this recipe from favorites?</string>
     <string name="remove_action">REMOVE</string>
-    <string name="saved_recipe_title">Saved Recipe</string>
+    <string name="saved_recipe_title">Saved Recipes</string>
     <string name="my_data_prefs">MyData</string>
-    <string name="saved_favorite">Saved Recipe</string>
-    <string name="removed_favorite">Saved Recipe</string>
+    <string name="saved_favorite">Recipe saved</string>
+    <string name="removed_favorite"> Recipe removed</string>
     <string name="searched_recipe_key">searchedRecipe</string>
     <string name="error_no_recipes">No recipes found</string>
     <string name="error_no_details">No recipe details found</string>

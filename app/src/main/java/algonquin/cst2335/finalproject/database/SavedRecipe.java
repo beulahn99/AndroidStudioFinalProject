@@ -1,6 +1,7 @@
 package algonquin.cst2335.finalproject.database;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 /**
@@ -43,6 +44,7 @@ public class SavedRecipe {
     /**
      * Constructs an empty SavedRecipe object.
      */
+    @Ignore
     public SavedRecipe(){
         // Empty constructor required by Room
     }
