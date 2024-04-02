@@ -3,8 +3,6 @@ package algonquin.cst2335.finalproject.activity;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
-import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
@@ -34,14 +32,14 @@ import algonquin.cst2335.finalproject.R;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class SearchFunctionalityTest {
+public class InfoButtonTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void searchFunctionalityTest() {
+    public void infoButtonTest() {
         ViewInteraction actionMenuItemView = onView(
                 allOf(withId(R.id.item_recipes), withContentDescription("Recipe Search App"),
                         childAtPosition(
@@ -52,61 +50,47 @@ public class SearchFunctionalityTest {
                         isDisplayed()));
         actionMenuItemView.perform(click());
 
-        ViewInteraction appCompatEditText = onView(
-                allOf(withId(R.id.recipeEditText),
+        ViewInteraction actionMenuItemView2 = onView(
+                allOf(withId(R.id.instructions), withContentDescription("About"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                1),
-                        isDisplayed()));
-        appCompatEditText.perform(replaceText("Rice"), closeSoftKeyboard());
-
-        ViewInteraction materialButton = onView(
-                allOf(withId(R.id.searchButton), withText("Search"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
+                                        withId(R.id.myToolbar),
+                                        1),
                                 2),
                         isDisplayed()));
-        materialButton.perform(click());
+        actionMenuItemView2.perform(click());
 
-        ViewInteraction imageView = onView(
-                allOf(withId(R.id.imageView), withContentDescription("Recipe image"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
+        ViewInteraction linearLayout = onView(
+                allOf(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class),
+                        withParent(allOf(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class),
+                                withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class)))),
                         isDisplayed()));
-        imageView.check(matches(isDisplayed()));
+        linearLayout.check(matches(isDisplayed()));
 
         ViewInteraction textView = onView(
-                allOf(withId(R.id.titleTextView), withText("Rice Pilaf"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
+                allOf(IsInstanceOf.<View>instanceOf(android.widget.TextView.class), withText("How to Use the Recipe Search App"),
+                        withParent(allOf(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class),
+                                withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class)))),
                         isDisplayed()));
-        textView.check(matches(withText("Rice Pilaf")));
-
-        ViewInteraction imageView2 = onView(
-                allOf(withId(R.id.imageView), withContentDescription("Recipe image"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
-                        isDisplayed()));
-        imageView2.check(matches(isDisplayed()));
+        textView.check(matches(withText("How to Use the Recipe Search App")));
 
         ViewInteraction textView2 = onView(
-                allOf(withId(R.id.titleTextView), withText("Rice Pudding"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
+                allOf(withId(android.R.id.message), withText("Home: Tap the home icon to return to the main menu.\n\nFavorite Recipes: Access your saved recipes by tapping the favorites icon.\n\nSearch: Look up recipes by typing in the search bar.\n\nSave Recipe: Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.\n\nRecipe Link: Click on the link icon to view the full recipe online.\n\nRecipe Details: Tap a recipe to view its details, including ingredients and instructions.\n\n\n\nVersion 1.0, created by Beulah Nwokotubo\n\n"),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
-        textView2.check(matches(withText("Rice Pudding")));
+        textView2.check(matches(withText("Home: Tap the home icon to return to the main menu.\n\nFavorite Recipes: Access your saved recipes by tapping the favorites icon.\n\nSearch: Look up recipes by typing in the search bar.\n\nSave Recipe: Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.\n\nRecipe Link: Click on the link icon to view the full recipe online.\n\nRecipe Details: Tap a recipe to view its details, including ingredients and instructions.\n\n\n\nVersion 1.0, created by Beulah Nwokotubo\n\n")));
 
-        ViewInteraction imageView3 = onView(
-                allOf(withId(R.id.imageView), withContentDescription("Recipe image"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
+        ViewInteraction linearLayout2 = onView(
+                allOf(withParent(allOf(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class),
+                                withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class)))),
                         isDisplayed()));
-        imageView3.check(matches(isDisplayed()));
+        linearLayout2.check(matches(isDisplayed()));
 
-        ViewInteraction textView3 = onView(
-                allOf(withId(R.id.titleTextView), withText("Rice with Fried Egg and Sausage"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class))),
+        ViewInteraction button = onView(
+                allOf(withId(android.R.id.button1), withText("OK"),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
-        textView3.check(matches(withText("Rice with Fried Egg and Sausage")));
+        button.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(

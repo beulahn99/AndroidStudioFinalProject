@@ -4,6 +4,7 @@ package algonquin.cst2335.finalproject.activity;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isDescendantOfA;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -72,11 +73,11 @@ public class HomeButtonTest {
                         isDisplayed()));
         textView.check(matches(withText("Welcome to The Multi-Utility App!")));
 
-        ViewInteraction imageView2 = onView(
-                allOf(withParent(allOf(withId(R.id.main_toolbar),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+        ViewInteraction toolbar = onView(
+                allOf(withId(R.id.main_toolbar),
+                        isDescendantOfA(withId(android.R.id.content)),
                         isDisplayed()));
-        imageView2.check(matches(isDisplayed()));
+        toolbar.check(matches(isDisplayed()));
 
         ViewInteraction textView2 = onView(
                 allOf(withText("Final Project"),

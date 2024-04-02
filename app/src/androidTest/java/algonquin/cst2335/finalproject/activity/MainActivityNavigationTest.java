@@ -22,7 +22,7 @@ import algonquin.cst2335.finalproject.R;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class MainActivityTest {
+public class MainActivityNavigationTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =

@@ -3,6 +3,8 @@ package algonquin.cst2335.finalproject.activity;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
@@ -32,14 +34,14 @@ import algonquin.cst2335.finalproject.R;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class HelpButtonTest {
+public class SearchTermSaveTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void hepIconTest() {
+    public void searchTermSaveTest() {
         ViewInteraction actionMenuItemView = onView(
                 allOf(withId(R.id.item_recipes), withContentDescription("Recipe Search App"),
                         childAtPosition(
@@ -50,21 +52,43 @@ public class HelpButtonTest {
                         isDisplayed()));
         actionMenuItemView.perform(click());
 
-        ViewInteraction actionMenuItemView2 = onView(
-                allOf(withId(R.id.instructions), withContentDescription("About"),
+        ViewInteraction appCompatEditText = onView(
+                allOf(withId(R.id.recipeEditText),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(R.id.myToolbar),
-                                        1),
+                                        withId(android.R.id.content),
+                                        0),
+                                1),
+                        isDisplayed()));
+        appCompatEditText.perform(replaceText("Cake"), closeSoftKeyboard());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.searchButton), withText("Search"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
                                 2),
                         isDisplayed()));
-        actionMenuItemView2.perform(click());
+        materialButton.perform(click());
+
+        ViewInteraction linearLayout = onView(
+                allOf(withParent(allOf(withId(R.id.recipeRecyclerView),
+                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        isDisplayed()));
+        linearLayout.check(matches(isDisplayed()));
 
         ViewInteraction textView = onView(
-                allOf(withId(android.R.id.message), withText("Home: Tap the home icon to return to the main menu.\n\nFavorite Recipes: Access your saved recipes by tapping the favorites icon.\n\nSearch: Look up recipes by typing in the search bar.\n\nSave Recipe: Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.\n\nRecipe Link: Click on the link icon to view the full recipe online.\n\nRecipe Details: Tap a recipe to view its details, including ingredients and instructions.\n\n\n\nVersion 1.0, created by Beulah Nwokotubo\n\n"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
+                allOf(withId(R.id.textViewPreviousSearch), withText("Cake"),
+                        withParent(withParent(withId(R.id.recipeRecyclerView))),
                         isDisplayed()));
-        textView.check(matches(withText("Home: Tap the home icon to return to the main menu.  Favorite Recipes: Access your saved recipes by tapping the favorites icon.  Search: Look up recipes by typing in the search bar.  Save Recipe: Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.  Recipe Link: Click on the link icon to view the full recipe online.  Recipe Details: Tap a recipe to view its details, including ingredients and instructions.    Version 1.0, created by Beulah Nwokotubo  ")));
+        textView.check(matches(withText("Cake")));
+
+        ViewInteraction imageView = onView(
+                allOf(withId(R.id.imageViewDelete), withContentDescription("Delete icon"),
+                        withParent(withParent(withId(R.id.recipeRecyclerView))),
+                        isDisplayed()));
+        imageView.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
