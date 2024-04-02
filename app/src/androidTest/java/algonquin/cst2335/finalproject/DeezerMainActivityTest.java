@@ -25,7 +25,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 @RunWith(AndroidJUnit4.class)
-public class MainActivityTest {
+public class DeezerMainActivityTest {
 
     private SharedPreferences preferences;
 
@@ -43,7 +43,7 @@ public class MainActivityTest {
     @Test
     public void testSearchButton() {
         // Launch the activity
-        ActivityScenario.launch(MainActivity.class);
+        ActivityScenario.launch(DeezerMainActivity.class);
 
         // Type a search query into the EditText
         Espresso.onView(ViewMatchers.withId(R.id.search_edit_text))
@@ -59,7 +59,7 @@ public class MainActivityTest {
     @Test
     public void testHelpDialog() {
         // Launch the activity
-        ActivityScenario.launch(MainActivity.class);
+        ActivityScenario.launch(DeezerMainActivity.class);
 
         // Click on the help menu item
         Espresso.openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getInstrumentation().getTargetContext());
@@ -72,7 +72,7 @@ public class MainActivityTest {
     @Test
     public void testFavoriteSongsActivity() {
         // Launch the activity
-        ActivityScenario.launch(MainActivity.class);
+        ActivityScenario.launch(DeezerMainActivity.class);
 
         // Click on the favorite songs menu item
         Espresso.openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getInstrumentation().getTargetContext());
@@ -85,7 +85,7 @@ public class MainActivityTest {
     @Test
     public void testBackButton() {
         // Launch the activity
-        ActivityScenario.launch(MainActivity.class);
+        ActivityScenario.launch(DeezerMainActivity.class);
 
         // Perform back button press
         Espresso.pressBackUnconditionally();
@@ -96,7 +96,7 @@ public class MainActivityTest {
     @Test
     public void testSearchButtonIsDisplayed() {
         // Launch the activity
-        ActivityScenario.launch(MainActivity.class);
+        ActivityScenario.launch(DeezerMainActivity.class);
 
         // Check if the search button is displayed
         Espresso.onView(withId(R.id.search_button)).check(matches(isDisplayed()));

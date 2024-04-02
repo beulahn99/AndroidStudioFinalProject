@@ -44,7 +44,7 @@ import algonquin.cst2335.finalproject.Database.Database;
 import algonquin.cst2335.finalproject.Database.History;
 import algonquin.cst2335.finalproject.Database.SearchHistoryDao;
 
-public class MainActivity extends AppCompatActivity implements SongHolder.OnItemClickListener {
+public class DeezerMainActivity extends AppCompatActivity implements SongHolder.OnItemClickListener {
 
     private RecyclerView recyclerView;
     private SongHolder songAdapter;
@@ -138,29 +138,29 @@ public class MainActivity extends AppCompatActivity implements SongHolder.OnItem
                             songAdapter.notifyDataSetChanged();
                         } else {
                             Log.e("DeezerSongActivity", "Error parsing JSON response");
-                            Toast.makeText(MainActivity.this, "Error parsing JSON response", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(DeezerMainActivity.this, "Error parsing JSON response", Toast.LENGTH_SHORT).show();
                         }
                     } catch (Exception e) {
                         Log.e("DeezerSongActivity", "Error: " + e.getMessage());
-                        Toast.makeText(MainActivity.this, "Error parsing JSON response", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DeezerMainActivity.this, "Error parsing JSON response", Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onError(String errorMessage) {
                     Log.e("DeezerSongActivity", "Error: " + errorMessage);
-                    Toast.makeText(MainActivity.this, "Error fetching data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DeezerMainActivity.this, "Error fetching data", Toast.LENGTH_SHORT).show();
                 }
             });
         } catch (Exception e) {
             Log.e("DeezerSongActivity", "Error: " + e.getMessage());
-            Toast.makeText(MainActivity.this, "Error fetching data", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DeezerMainActivity.this, "Error fetching data", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu1, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setQueryHint(getString(R.string.search_artists));
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity implements SongHolder.OnItem
     public void onItemClick(int position) {
         // Handle item click to open details activity
         Song selectedSong = songList.get(position);
-        Intent intent = new Intent(MainActivity.this, FetchData.class);
+        Intent intent = new Intent(DeezerMainActivity.this, FetchData.class);
         intent.putExtra("selectedSong", (Serializable) selectedSong);
         startActivity(intent);
         // Show a Snackbar message
