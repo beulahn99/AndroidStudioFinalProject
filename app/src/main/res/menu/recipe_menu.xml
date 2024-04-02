@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: menu_saved_recipe.xml
+    Purpose: Menu resource file for the saved recipe activity toolbar menu.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Menu item for home page -->
+    <item android:id="@+id/home_page"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="always"/>
+
+    <!-- Menu item for favorite list -->
+    <item android:id="@+id/fav_list"
+        android:icon="@drawable/fav_recipes_icon"
+        android:title="@string/fav_recipe"
+        app:showAsAction="always"/>
+
+    <!-- Menu item for instructions/about -->
+    <item
+        android:id="@+id/instructions"
+        android:icon="@drawable/ic_info"
+        android:title="@string/about"
+        app:showAsAction="always" />
+</menu>

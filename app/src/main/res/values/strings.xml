@@ -1,3 +1,61 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="recipe_hint">Enter recipe name</string>
+    <string name="search_text">Search</string>
+    <string name="toolbar_title">Toolbar title</string>
+    <string name="toolbar_subtitle">Toolbar subtitle</string>
+    <string name="app_recipes_name">Recipe Search App</string>
+    <string name="about">About</string>
+    <string name="about_text">Version 1.0, created by Beulah Nwokotubo</string>
+    <string name="home">Home</string>
+    <string name="fav_recipe">Favorites</string>
+    <string name="recipe_menu_info">Version 1.0, created by Beulah Nwokotubo</string>
+    <string name="recipe_prefs">My Preferences</string>
+    <string name="recent_search">Recent Searches</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="recipe_title">Recipe Search App</string>
+    <string name="search_hint">Search</string>
+    <string name="fav_recipes">Saved Recipes</string>
+    <string name="search_terms">searchTerms</string>
+    <string name="welcome_message">Welcome to The Multi-Utility App!</string>
+    <string name="icon_description">Main app icon</string>
+    <string name="fav_button_description">Save recipe button</string>
+    <string name="link_description">Link button</string>
+    <string name="link_text">View Source URL</string>
+    <string name="summary_text">Summary</string>
+    <string name="external_link">External link</string>
+    <string name="unsave_recipe">Unsave recipe</string>
+    <string name="my_recipe_image">My recipe image</string>
+    <string name="title">Title</string>
+    <string name="recipe_image_description">Recipe image</string>
+    <string name="delete_icon">Delete icon</string>
+    <string name="recipe_removed_from_favorites">Recipe removed from favorites</string>
+    <string name="confirm_remove_recipe">Are you sure you want to remove this recipe from favorites?</string>
+    <string name="remove_action">REMOVE</string>
+    <string name="saved_recipe_title">Saved Recipes</string>
+    <string name="my_data_prefs">MyData</string>
+    <string name="saved_favorite">Recipe saved</string>
+    <string name="removed_favorite"> Recipe removed</string>
+    <string name="searched_recipe_key">searchedRecipe</string>
+    <string name="error_no_recipes">No recipes found</string>
+    <string name="error_no_details">No recipe details found</string>
+    <string name="error_parsing_response">Error parsing response</string>
+    <string name="error_failed">Failed: %s</string>
+    <string name="error_failed_details">Failed to fetch recipe details: %s</string>
+    <string name="unavailable_url">Source URL not available</string>
+    <string name="app_instructions">How to Use the Recipe Search App</string>
+    <string name="recipe_instructions_message">
+    <![CDATA[
+    <p><strong>Home:</strong> Tap the home icon to return to the main menu.</p>
+    <p><strong>Favorite Recipes:</strong> Access your saved recipes by tapping the favorites icon.</p>
+    <p><strong>Search:</strong> Look up recipes by typing in the search bar.</p>
+    <p><strong>Save Recipe:</strong> Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.</p>
+    <p><strong>Recipe Link:</strong> Click on the link icon to view the full recipe online.</p>
+    <p><strong>Recipe Details:</strong> Tap a recipe to view its details, including ingredients and instructions.</p>
+    <br/><br/>
+    <p>Version 1.0, created by Beulah Nwokotubo</p>
+    ]]>
+    </string>
+
+
 </resources>
