@@ -17,13 +17,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 import com.squareup.picasso.Picasso;
-import algonquin.cst2335.finalproject.Database.Database;
+import algonquin.cst2335.finalproject.Database.SongDatabase;
 import algonquin.cst2335.finalproject.Database.SongData;
 
 public class FetchData extends AppCompatActivity {
     private ImageView albumCoverImageView;
     private TextView titleTextView, artistTextView, albumTextView, durationTextView;
-    private Database db;
+    private SongDatabase db;
 
     /**
      * Called when the activity is starting. This is where most initialization should go.
@@ -38,7 +38,7 @@ public class FetchData extends AppCompatActivity {
         setContentView(R.layout.activity_details);
 
         // Initialize Room database
-        db = Room.databaseBuilder(getApplicationContext(), Database.class, "songs_database")
+        db = Room.databaseBuilder(getApplicationContext(), SongDatabase.class, "songs_database")
                 .fallbackToDestructiveMigration()
                 .build();
 

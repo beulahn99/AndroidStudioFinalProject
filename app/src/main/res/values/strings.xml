@@ -11,13 +11,13 @@
     <string name="song_selected">"Song selected: "</string>
     <string name="ok">OK</string>
     <string name="delete">Delete</string>
-    <string name="app_name">Deezer Song</string>
     <string name="app_name">Final Project</string>
     <string name="recipe_hint">Enter recipe name</string>
     <string name="search_text">Search</string>
     <string name="toolbar_title">Toolbar title</string>
     <string name="toolbar_subtitle">Toolbar subtitle</string>
     <string name="app_recipes_name">Recipe Search App</string>
+    <string name="app_songs_name">Deezer Song Search App</string>
     <string name="about">About</string>
     <string name="about_text">Version 1.0, created by Beulah Nwokotubo</string>
     <string name="home">Home</string>

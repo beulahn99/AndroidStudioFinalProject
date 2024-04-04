@@ -40,9 +40,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import algonquin.cst2335.finalproject.Database.Database;
-import algonquin.cst2335.finalproject.Database.History;
-import algonquin.cst2335.finalproject.Database.SearchHistoryDao;
+import algonquin.cst2335.finalproject.Database.*;
+import algonquin.cst2335.finalproject.Database.SongDatabase;
 
 public class DeezerMainActivity extends AppCompatActivity implements SongHolder.OnItemClickListener {
 
@@ -54,7 +53,7 @@ public class DeezerMainActivity extends AppCompatActivity implements SongHolder.
     private EditText searchEditText;
     private String searchQuery;
     private SharedPreferences sharedPreferences;
-    private Database db;
+    private SongDatabase db;
     private SearchHistoryDao searchHistoryDao;
 
     /**
@@ -87,7 +86,7 @@ public class DeezerMainActivity extends AppCompatActivity implements SongHolder.
         searchEditText = findViewById(R.id.search_edit_text);
         // Initialize Room db
         db = Room.databaseBuilder(getApplicationContext(),
-                Database.class, "searchHistory").build();
+                SongDatabase.class, "searchHistory").build();
         searchHistoryDao = db.searchHistoryDao();
 
         // Example usage:

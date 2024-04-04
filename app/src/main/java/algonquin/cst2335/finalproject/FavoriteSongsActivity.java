@@ -11,14 +11,14 @@ import androidx.room.Room;
 import java.util.ArrayList;
 import java.util.List;
 
-import algonquin.cst2335.finalproject.Database.Database;
+import algonquin.cst2335.finalproject.Database.SongDatabase;
 import algonquin.cst2335.finalproject.Database.SongData;
 
 public class FavoriteSongsActivity extends AppCompatActivity {
     private ListView listView;
     private ArrayAdapter<String> adapter;
     private List<String> favoriteSongsTitles = new ArrayList<>();
-    private Database db;
+    private SongDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class FavoriteSongsActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, favoriteSongsTitles);
         listView.setAdapter(adapter);
 
-        db = Room.databaseBuilder(getApplicationContext(), Database.class, "songs_database")
+        db = Room.databaseBuilder(getApplicationContext(), SongDatabase.class, "songs_database")
                 .fallbackToDestructiveMigration()
                 .build();
 

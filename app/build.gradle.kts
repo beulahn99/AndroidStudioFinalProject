@@ -35,8 +35,7 @@ android {
 dependencies {
     val room_version = "2.6.1"
     implementation("androidx.appcompat:appcompat:1.6.1")
-//    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.6.0-alpha03")
-    var room_version = "2.6.1"
+//    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.6.0-alpha03"
 //    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

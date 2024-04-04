@@ -22,6 +22,7 @@
         tools:targetApi="31">
         <activity android:name=".FetchData"></activity>
         <activity android:name=".FavoriteSongsActivity"></activity>
+        <activity android:name=".DeezerMainActivity"></activity>
         <activity
             android:name=".activity.RecipeListActivity"
             android:exported="false" />

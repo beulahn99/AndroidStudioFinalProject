@@ -14,14 +14,14 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-import algonquin.cst2335.finalproject.Database.Database;
+import algonquin.cst2335.finalproject.Database.SongDatabase;
 
 /**
  * The activity that manages the search history. It allows the user to delete all search history records from the database.
  */
 public class SearchHistory extends AppCompatActivity {
 
-    private Database db;
+    private SongDatabase db;
     private Button deleteHistoryButton;
 
     /**
@@ -36,7 +36,7 @@ public class SearchHistory extends AppCompatActivity {
         setContentView(R.layout.activity_search_history);
 
         // Setup Room database to manage search history data.
-        db = Room.databaseBuilder(getApplicationContext(), Database.class, "searchHistory")
+        db = Room.databaseBuilder(getApplicationContext(), SongDatabase.class, "searchHistory")
                 .allowMainThreadQueries()
                 .build();
 

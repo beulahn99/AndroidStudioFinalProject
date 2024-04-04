@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import algonquin.cst2335.finalproject.DeezerMainActivity;
 import algonquin.cst2335.finalproject.R;
 import algonquin.cst2335.finalproject.databinding.ActivityMainBinding;
 
@@ -41,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.item_recipes) {
             Intent intent = new Intent(MainActivity.this, RecipeSearchActivity.class);
             startActivity(intent);
-//        } else if (item.getItemId() == R.id.item_songs) {
-//            Intent intent = new Intent(MainActivity.this, DeezerMainActivity.class);
-//            startActivity(intent);
+        } else if (item.getItemId() == R.id.item_songs) {
+            Intent intent = new Intent(MainActivity.this, DeezerMainActivity.class);
+            startActivity(intent);
 //        } else if (item.getItemId() == R.id.item_sunrise) {
 //            //TODO
         } else if (item.getItemId() == R.id.item_about) {
