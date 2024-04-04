@@ -3,6 +3,7 @@
   <component name="AndroidTestResultsUserPreferences">
     <option name="androidTestResultsTableState">
       <map>
+        <entry key="-609493867">
         <entry key="-1384473184">
           <value>
             <AndroidTestResultsTableState>
@@ -23,6 +24,8 @@
               <option name="preferredColumnWidths">
                 <map>
                   <entry key="Duration" value="90" />
+                  <entry key="Pixel_6a_API_27" value="120" />
+                  <entry key="Pixel_7_API_27" value="120" />
                   <entry key="Genymobile Pixel 8 Pro" value="120" />
                   <entry key="Tests" value="360" />
                 </map>

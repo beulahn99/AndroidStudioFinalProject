@@ -1,0 +1,15 @@
+<resources>
+    <string name="save_song">पसंदीदा</string>
+    <string name="duration">अवधि</string>
+    <string name="album_name">एल्बम का नाम</string>
+    <string name="artist_name">कलाकार का नाम</string>
+    <string name="song_title">गाना का शीर्षक</string>
+    <string name="enter_search_query">खोज क्वेरी दर्ज करें</string>
+    <string name="search">खोजें</string>
+    <string name="search_artists">कलाकार खोजें</string>
+    <string name="help">म्यूज़िक लाइब्रेरी ऐप का उपयोग करना शुरू करने के लिए, उसके गानों के संग्रह को ब्राउज़ करें। आप किसी भी गाने को चुनकर उसका विवरण देख सकते हैं, जैसे कि शीर्षक, कलाकार, और अवधि। यदि आप किसी गाने को पसंद करते हैं, तो उसका विवरण देखते समय "पसंदीदा" बटन दबाएं। अपने सहेजे गए पसंदीदा को फिर से देखने के लिए, मुख्य मेनू में उपलब्ध "पसंदीदा गाने" खंड में जाएं। </string>
+    <string name="song_selected">"चयनित गाना: "</string>
+    <string name="ok">ठीक है</string>
+    <string name="delete">हटाएं</string>
+    <string name="app_name">डीज़र सोंग</string>
+</resources>
