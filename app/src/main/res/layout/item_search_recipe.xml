@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    File: item_search_recipe.xml
+    Purpose: Layout file for each item in the RecyclerView of previous search terms.
+    Author: Beulah Nwokotubo
+    Lab Section: 013
+    Creation Date: 28th March, 2024
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- Text view to display previous search term -->
+    <TextView
+        android:id="@+id/textViewPreviousSearch"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <!-- Image view for delete icon -->
+    <ImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="@string/delete_icon"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet Final</string>
+    <string name="recipe_hint">Entrez le nom de la recette</string>
+    <string name="search_text">Chercher</string>
+    <string name="toolbar_title">Titre de la barre d\'outils</string>
+    <string name="toolbar_subtitle">Sous-titre de la barre d\'outils</string>
+    <string name="app_recipes_name">Application de recherche de recettes</string>
+    <string name="about">À propos</string>
+    <string name="about_text">Version 1.0, créée par Beulah Nwokotubo</string>
+    <string name="home">Accueil</string>
+    <string name="fav_recipe">Favoris</string>
+    <string name="recipe_menu_info">Version 1.0, créée par Beulah Nwokotubo</string>
+    <string name="recipe_prefs">Mes préférences</string>
+    <string name="recent_search">Recherches récentes</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="recipe_title">Application de recherche de recettes</string>
+    <string name="search_hint">Chercher</string>
+    <string name="fav_recipes">Recettes sauvegardées</string>
+    <string name="search_terms">Termes de recherche</string>
+    <string name="welcome_message">Bienvenue dans l\'application multi-utilitaire !</string>
+    <string name="icon_description">Icône principale de l\'application</string>
+    <string name="fav_button_description">Bouton Enregistrer la recette</string>
+    <string name="link_description">Bouton de lien</string>
+    <string name="link_text">Voir l\'URL source</string>
+    <string name="summary_text">Résumé</string>
+    <string name="external_link">Lien externe</string>
+    <string name="unsave_recipe">Désenregistrer la recette</string>
+    <string name="my_recipe_image">Mon image de recette</string>
+    <string name="title">Titre</string>
+    <string name="recipe_image_description">Image de recette</string>
+    <string name="delete_icon">Icône de suppression</string>
+    <string name="recipe_removed_from_favorites">Recette supprimée des favoris</string>
+    <string name="confirm_remove_recipe">Êtes-vous sûr de vouloir supprimer cette recette des favoris ?</string>
+    <string name="remove_action">SUPPRIMER</string>
+    <string name="saved_recipe_title">Recette enregistrée</string>
+    <string name="my_data_prefs">Mes données</string>
+    <string name="saved_favorite">Recette sauvegardée</string>
+    <string name="removed_favorite">Recette supprimée</string>
+    <string name="searched_recipe_key">recetteRecherchée</string>
+    <string name="error_no_recipes">Aucune recette trouvée</string>
+    <string name="error_no_details">Aucun détail de recette trouvé</string>
+    <string name="error_parsing_response">Erreur d\'analyse de la réponse</string>
+    <string name="error_failed">Échec : %s</string>
+    <string name="error_failed_details">Échec lors de la récupération des détails de la recette : %s</string>
+    <string name="unavailable_url">URL source non disponible</string>
+    <string name="app_instructions">Comment utiliser l\'application de recherche de recettes</string>
+    <string name="recipe_instructions_message">
+        <![CDATA[
+        <p><strong>Accueil :</strong> Appuyez sur l\'icône d\'accueil pour retourner au menu principal.</p>
+        <p><strong>Recettes Préférées :</strong> Accédez à vos recettes enregistrées en appuyant sur l\'icône des favoris.</p>
+        <p><strong>Recherche :</strong> Recherchez des recettes en saisissant un terme dans la barre de recherche.</p>
+        <p><strong>Enregistrer une recette :</strong> Appuyez sur l\'icône d\'enregistrement pour ajouter une recette à vos favoris. Supprimez la en appuyant sur l\'icône de corbeille.</p>
+        <p><strong>Lien de la recette :</strong> Cliquez sur l\'icône de lien pour consulter la recette complète en ligne.</p>
+        <p><strong>Détails de la recette :</strong> Appuyez sur une recette pour afficher ses détails, y compris les ingrédients et les instructions.</p>
+        <br/><br/>
+        <p>Version 1.0, created by Beulah Nwokotubo</p>
+        ]]>
+    </string>
+</resources>
