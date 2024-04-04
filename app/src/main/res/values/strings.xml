@@ -11,7 +11,7 @@
     <string name="song_selected">"Song selected: "</string>
     <string name="ok">OK</string>
     <string name="delete">Delete</string>
-    <string name="app_name">Deezer Song</string>
+    <string name="app_songs_name">Deezer Song</string>
     <string name="app_name">Final Project</string>
     <string name="recipe_hint">Enter recipe name</string>
     <string name="search_text">Search</string>

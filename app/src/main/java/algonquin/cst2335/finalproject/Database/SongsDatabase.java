@@ -11,19 +11,19 @@ import androidx.room.RoomDatabase;
 
 
 @androidx.room.Database(entities = {SongData.class, History.class}, version = 1, exportSchema = false)
-    public abstract class Database extends RoomDatabase {
+    public abstract class SongsDatabase extends RoomDatabase {
         public abstract SongDao songDao();
         public abstract SearchHistoryDao searchHistoryDao();
 
 
-        private static volatile Database INSTANCE;
+        private static volatile SongsDatabase INSTANCE;
 
-        public static Database getDatabase(final Context context) {
+        public static SongsDatabase getDatabase(final Context context) {
             if (INSTANCE == null) {
-                synchronized (Database.class) {
+                synchronized (SongsDatabase.class) {
                     if (INSTANCE == null) {
                         INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                                        Database.class, "song_database")
+                                        SongsDatabase.class, "song_database")
                                 .fallbackToDestructiveMigration()
                                 .build();
                     }

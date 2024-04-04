@@ -32,13 +32,14 @@
 <!--        app:showAsAction="always" />-->
 
         <!-- Menu item for navigating to the Deezer Song Search app -->
-<!--        android:id="@+id/item_songs"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:icon="@drawable/icon_songs"-->
-<!--        android:title="@string/app_songs_name"-->
-<!--        app:tooltipText="@string/app_songs_name"-->
-<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/item_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_songs"
+        android:title="@string/app_songs_name"
+        app:tooltipText="@string/app_songs_name"
+        app:showAsAction="always" />
 
         <!-- Menu item for navigating to the Sunsrise and Sunset Lookup app -->
 <!--        android:id="@+id/item_sunrise"-->
