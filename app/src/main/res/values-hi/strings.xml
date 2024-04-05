@@ -1,18 +1,6 @@
 <resources>
-    <string name="save_song">Favorite</string>
-    <string name="duration">Duration</string>
-    <string name="album_name">Album Name</string>
-    <string name="artist_name">Artist Name</string>
-    <string name="song_title">Song Title</string>
-    <string name="enter_search_query">Search Song</string>
-    <string name="search">Search</string>
-    <string name="search_artists">Search Artists</string>
-    <string name="help">To begin using the Music Library App, start by browsing through its collection of songs. You can select any song to view its details, such as the title, artist, and duration. If you wish to save a song as a favorite, simply tap the "Save" button while viewing its details. To revisit your saved favorites, navigate to the "Favorite Songs" section available in the main menu. </string>
-    <string name="song_selected">"Song selected: "</string>
-    <string name="ok">OK</string>
-    <string name="delete">Delete</string>
+
     <string name="app_songs_name">Deezer Song</string>
-    <string name="app_name">Final Project</string>
     <string name="recipe_hint">Enter recipe name</string>
     <string name="search_text">Search</string>
     <string name="toolbar_title">Toolbar title</string>
@@ -57,18 +45,18 @@
     <string name="error_failed_details">Failed to fetch recipe details: %s</string>
     <string name="unavailable_url">Source URL not available</string>
     <string name="app_instructions">How to Use the Recipe Search App</string>
-    <string name="recipe_instructions_message">
-    <![CDATA[
-    <p><strong>Home:</strong> Tap the home icon to return to the main menu.</p>
-    <p><strong>Favorite Recipes:</strong> Access your saved recipes by tapping the favorites icon.</p>
-    <p><strong>Search:</strong> Look up recipes by typing in the search bar.</p>
-    <p><strong>Save Recipe:</strong> Tap the save icon to add a recipe to your favorites. Remove it by tapping the trash icon.</p>
-    <p><strong>Recipe Link:</strong> Click on the link icon to view the full recipe online.</p>
-    <p><strong>Recipe Details:</strong> Tap a recipe to view its details, including ingredients and instructions.</p>
-    <br/><br/>
-    <p>Version 1.0, created by Beulah Nwokotubo</p>
-    ]]>
-    </string>
-
-
+    <string name="recipe_instructions_message">Not important for this app</string>
+    <string name="save_song">पसंदीदा</string>
+    <string name="duration">अवधि</string>
+    <string name="album_name">एल्बम का नाम</string>
+    <string name="artist_name">कलाकार का नाम</string>
+    <string name="song_title">गाना का शीर्षक</string>
+    <string name="enter_search_query">खोज क्वेरी दर्ज करें</string>
+    <string name="search">खोजें</string>
+    <string name="search_artists">कलाकार खोजें</string>
+    <string name="help">म्यूज़िक लाइब्रेरी ऐप का उपयोग करना शुरू करने के लिए, उसके गानों के संग्रह को ब्राउज़ करें। आप किसी भी गाने को चुनकर उसका विवरण देख सकते हैं, जैसे कि शीर्षक, कलाकार, और अवधि। यदि आप किसी गाने को पसंद करते हैं, तो उसका विवरण देखते समय "पसंदीदा" बटन दबाएं। अपने सहेजे गए पसंदीदा को फिर से देखने के लिए, मुख्य मेनू में उपलब्ध "पसंदीदा गाने" खंड में जाएं। </string>
+    <string name="song_selected">"चयनित गाना: "</string>
+    <string name="ok">ठीक है</string>
+    <string name="delete">हटाएं</string>
+    <string name="app_name">डीज़र सोंग</string>
 </resources>
