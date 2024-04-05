@@ -1,3 +1,55 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">Dictionary API</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="jmtdictionary">Dictionary</string>
+    <string name="jmtrecent">Recent</string>
+    <string name="jmtdefinitions">Definitions</string>
+    <string name="jmtsynonyms">Synonyms</string>
+    <string name="jmtexamples">Examples</string>
+    <string name="jmtresults">Results</string>
+    <string name="jmtfavourites">Saved Searches</string>
+    <string name="jmtsaved_searches">This definition is stored under saved searches</string>
+    <string name="jmtremove_saved">Removed from Saved Searches</string>
+    <string name="jmtconfirm_saved">Are you sure you want to remove this definition from your saved searches?</string>
+    <string name="jmtrestore_saved">Restored to Saved Searches</string>
+    <string name="jmtshared_pref_wel">Welcome to the App!</string>
+    <string name="jmtselect_remove">Please select word you want to remove</string>
+    <string name="jmtsearch_again">You can try the search again at later time or head to the web instead.</string>
+    <string name="jmtsorry_jeel">Sorry Jeel\, we couldn\'t find definitions for the word you were looking for</string>
+    <string name="jmtremove">Remove</string>
+    <string name="jmtnext">Next</string>
+    <string name="jmtabout" translatable="false">Help</string>
+    <string name="jmtcontacts">Contact</string>
+    <string name="jmtabout_title">Instructions for Dictionary API</string>
+    <string name="jmtabout_message">To use a dictionary API, follow these simplified steps:\n1. Search for the word you want the definition of. \n2. You can also save the searched item and access it from the home page.
+    \n3. To remove a word from saved searches, simply press the word and then click the save button again.
+    \n4. To learn more about the app, click on the menu bar at the top right and select "About App".</string>
+    <string name="jmtinfo_contact">Email: jeelmt@algonquin.com\nPhone: (123) 456-7890</string>
+    <string name="jmtabout_contact">Contact Information</string>
+    <string-array name="jmtlevelList">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="jmtareaList">
+        <item>ES</item>
+        <item>MS</item>
+        <item>HS</item>
+        <item>KSAT</item>
+        <item>TOEIC</item>
+        <item>TOEFL</item>
+        <item>TEPS</item>
+        <item>SAT</item>
+        <item>IETLS</item>
+        <item>GRE</item>
+        <item>GMAT</item>
+        <item>OVERALL</item>
+    </string-array>
 </resources>

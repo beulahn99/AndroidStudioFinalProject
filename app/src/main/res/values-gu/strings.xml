@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ડિક્શનરી API</string>
+    <string name="jmtdictionary">શબ્દકોશ</string>
+    <string name="jmtrecent">તાજેતરનું</string>
+    <string name="jmtdefinitions">વ્યાખ્યાઓ</string>
+    <string name="jmtsynonyms">સમાનાર્થી શબ્દો</string>
+    <string name="jmtexamples">દાખલા</string>
+    <string name="jmtresults">પરિણામો</string>
+    <string name="jmtfavourites">સાચવેલ શોધો</string>
+    <string name="jmtsaved_searches">આ વ્યાખ્યાને સાચવેલ શોધો હેઠળ સંગ્રહિત કરવામાં આવી છે</string>
+    <string name="jmtremove_saved">સાચવેલ શોધોમાંથી દૂર કરવામાં આવ્યું</string>
+    <string name="jmtconfirm_saved">શું તમે ખરેખર આ વ્યાખ્યાને તમારા સાચવેલ શોધોમાંથી દૂર કરવા માંગો છો?</string>
+    <string name="jmtrestore_saved">સાચવેલ શોધોમાં પુનઃસ્થાપિત</string>
+    <string name="jmtshared_pref_wel">એપ્લિકેશનમાં આપનું સ્વાગત છે!</string>
+    <string name="jmtselect_remove">કૃપા કરીને દૂર કરવા માટે શબ્દ પસંદ કરો</string>
+    <string name="jmtsearch_again">તમે પછીથી ફરીથી શોધ કરી શકો છો અથવા વેબ પર જઈ શકો છો.</string>
+    <string name="jmtsorry_jeel">માફ કરશો Jeel, અમે તમે શોધી રહેલા શબ્દની વ્યાખ્યાઓ મેળવી શક્યા નથી</string>
+    <string name="jmtremove">દૂર કરો</string>
+    <string name="jmtnext">આગળ</string>
+    <string name="jmtabout" translatable="false">મદદ</string>
+    <string name="jmtcontacts">સંપર્ક</string>
+    <string name="jmtabout_title">ડિક્શનરી API માટેની સૂચનાઓ</string>
+    <string name="jmtabout_message">ડિક્શનરી API નો ઉપયોગ કરવા માટે, આ સરળ પગલાઓને અનુસરો:\n1. જે શબ્દની વ્યાખ્યા તમે ઇચ્છો છો તે શોધો.\n2. તમે શોધેલ આઇટમને પણ સાચવી શકો છો અને તેને હોમ પેજ પરથી ઍક્સેસ કરી શકો છો.\n3. સાચવેલ શોધોમાંથી શબ્દને દૂર કરવા માટે, ફક્ત શબ્દ પર દબાવો અને પછી સેવ બટનને ફરીથી ક્લિક કરો.\n4. એપ્લિકેશન વિશે વધુ જાણવા માટે, ઉપર જમણી બાજુએ મેનુ બાર પર ક્લિક કરો અને \"About App\" પસંદ કરો.</string>
+    <string name="jmtinfo_contact">ઇમેઇલ: jeelmt@algonquin.com\nફોન: (123) 456-7890</string>
+    <string name="jmtabout_contact">સંપર્ક માહિતી</string>
+</resources>

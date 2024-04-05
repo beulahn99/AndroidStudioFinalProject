@@ -1,4 +1,4 @@
-package algonquin.cst2335.finalproject;
+package algonquin.cst2335.tand0019;
 
 import android.content.Context;
 
