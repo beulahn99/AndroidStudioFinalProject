@@ -44,7 +44,7 @@ public class Sunrise_Sunset extends AppCompatActivity {
 
     private SQLiteDatabase database;
     private FavoritesAdapter favoritesAdapter;
-
+    private Bundle savedInstanceState;
 
 
     @Override
@@ -221,6 +221,24 @@ public class Sunrise_Sunset extends AppCompatActivity {
             }
         }
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_sunrise_sunset, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_delete) {
+            // Handle delete action
+            // Your deletion logic here
+
+            return true;
+        }
+        // Else, handle other menu items. You can add more else-if blocks for them.
+
+        return super.onOptionsItemSelected(item); // Default action
+    }
+
 
 
 
