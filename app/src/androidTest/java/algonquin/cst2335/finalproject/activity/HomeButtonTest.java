@@ -31,14 +31,27 @@ import org.junit.runner.RunWith;
 
 import algonquin.cst2335.finalproject.R;
 
+/**
+ * Purpose: This class contains Espresso UI tests for the Home button functionality in the RecipeSearchActivity.
+ *
+ * Author: Beulah Nwokotubo
+ * Section: 013
+ * Creation Date: 31st March, 2024
+ */
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class HomeButtonTest {
 
+    /**
+     * Rule to launch the MainActivity before each test.
+     */
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
+    /**
+     * UI test for the Home button functionality.
+     */
     @Test
     public void homeButtonTest() {
         ViewInteraction actionMenuItemView = onView(
@@ -93,6 +106,13 @@ public class HomeButtonTest {
         imageView3.check(matches(isDisplayed()));
     }
 
+    /**
+     * Custom matcher to locate a child view at a specified position within a parent view.
+     *
+     * @param parentMatcher The matcher for the parent view.
+     * @param position      The position of the child view within the parent view.
+     * @return A matcher for the child view at the specified position.
+     */
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 

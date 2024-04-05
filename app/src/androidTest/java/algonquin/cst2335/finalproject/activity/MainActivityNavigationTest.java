@@ -20,14 +20,27 @@ import org.junit.runner.RunWith;
 
 import algonquin.cst2335.finalproject.R;
 
+/**
+ * Purpose: This class contains Espresso UI tests for the Recipe Search Icon functionality in the MainActivity.
+ *
+ * Author: Beulah Nwokotubo
+ * Section: 013
+ * Creation Date: 31st March, 2024
+ */
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class MainActivityNavigationTest {
 
+    /**
+     * Rule to launch the MainActivity before each test.
+     */
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
+    /**
+     * UI test for the main activity recipe search navigation button.
+     */
     @Test
     public void mainActivityTest() {
         ViewInteraction button = onView(

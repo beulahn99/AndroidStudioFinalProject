@@ -32,14 +32,27 @@ import org.junit.runner.RunWith;
 
 import algonquin.cst2335.finalproject.R;
 
+/**
+ * Purpose: This class contains Espresso UI tests for saving a search term in the Recipe Search App.
+ *
+ * Author: Beulah Nwokotubo
+ * Section: 013
+ * Creation Date: 31st March, 2024
+ */
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class SearchTermSaveTest {
 
+    /**
+     * Rule to launch the MainActivity before each test.
+     */
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
+    /**
+     * UI test for saving a search term.
+     */
     @Test
     public void searchTermSaveTest() {
         ViewInteraction actionMenuItemView = onView(
@@ -91,6 +104,13 @@ public class SearchTermSaveTest {
         imageView.check(matches(isDisplayed()));
     }
 
+    /**
+     * Custom matcher to locate a child view at a specified position within a parent view.
+     *
+     * @param parentMatcher The matcher for the parent view.
+     * @param position      The position of the child view within the parent view.
+     * @return A matcher for the child view at the specified position.
+     */
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 
